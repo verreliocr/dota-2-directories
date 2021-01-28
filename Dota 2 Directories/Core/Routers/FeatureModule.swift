@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 enum FeatureModule {
-    case none
+    case .listHeroes
 
     func create(using router: IRouter) -> IModule {
         switch self {
-        case .none:
-            return 
+        case .listHeroes:
+            return ListHeroesModule(appRouter: router)
         }
     }
 }
