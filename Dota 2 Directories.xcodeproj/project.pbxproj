@@ -25,6 +25,10 @@
 		66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9225C3215E0070D881 /* HTTPRequest.swift */; };
 		66606C9625C3216C0070D881 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9525C3216C0070D881 /* IRequest.swift */; };
 		66606C9925C3217B0070D881 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9825C3217B0070D881 /* Reachability.swift */; };
+		66606C9C25C321BB0070D881 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9B25C321BB0070D881 /* AppRouter.swift */; };
+		66606C9F25C321CB0070D881 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9E25C321CB0070D881 /* FeatureModule.swift */; };
+		66606CA225C3221D0070D881 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CA125C3221D0070D881 /* IModule.swift */; };
+		66606CA525C3222B0070D881 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CA425C3222B0070D881 /* IRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		66606C9225C3215E0070D881 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		66606C9525C3216C0070D881 /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
 		66606C9825C3217B0070D881 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		66606C9B25C321BB0070D881 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		66606C9E25C321CB0070D881 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
+		66606CA125C3221D0070D881 /* IModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
+		66606CA425C3222B0070D881 /* IRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 		66606C6725C31F600070D881 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				66606C9B25C321BB0070D881 /* AppRouter.swift */,
+				66606C9E25C321CB0070D881 /* FeatureModule.swift */,
+				66606CA125C3221D0070D881 /* IModule.swift */,
+				66606CA425C3222B0070D881 /* IRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -224,10 +236,13 @@
 				66606C7825C320340070D881 /* Extension+UICollectionViewCell.swift in Sources */,
 				66606C7E25C3205B0070D881 /* Extension+UITableView.swift in Sources */,
 				66606C9625C3216C0070D881 /* IRequest.swift in Sources */,
+				66606CA225C3221D0070D881 /* IModule.swift in Sources */,
 				66606C8125C3206A0070D881 /* Extension+UITableViewCell.swift in Sources */,
+				66606CA525C3222B0070D881 /* IRouter.swift in Sources */,
 				66606C8A25C320ED0070D881 /* EndPoint.swift in Sources */,
 				66606C6F25C31FF40070D881 /* Extension+Codable.swift in Sources */,
 				66606C8D25C321450070D881 /* HandleError.swift in Sources */,
+				66606C9F25C321CB0070D881 /* FeatureModule.swift in Sources */,
 				66606C7225C3200F0070D881 /* Extension+UIApplication.swift in Sources */,
 				66606C7B25C3204A0070D881 /* Extension+UIImageView.swift in Sources */,
 				66606C4C25C31C4A0070D881 /* AppDelegate.swift in Sources */,
@@ -235,6 +250,7 @@
 				66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */,
 				66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */,
 				66606C9925C3217B0070D881 /* Reachability.swift in Sources */,
+				66606C9C25C321BB0070D881 /* AppRouter.swift in Sources */,
 				66606C8425C320770070D881 /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
