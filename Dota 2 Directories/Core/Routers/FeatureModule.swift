@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 enum FeatureModule {
-    case .listHeroes
+    case listHeroes
 
     func create(using router: IRouter) -> IModule {
         switch self {
