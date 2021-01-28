@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		66606C4C25C31C4A0070D881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C4B25C31C4A0070D881 /* AppDelegate.swift */; };
-		66606C4E25C31C4A0070D881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C4D25C31C4A0070D881 /* SceneDelegate.swift */; };
 		66606C5025C31C4A0070D881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C4F25C31C4A0070D881 /* ViewController.swift */; };
 		66606C5325C31C4A0070D881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66606C5125C31C4A0070D881 /* Main.storyboard */; };
 		66606C5525C31C4B0070D881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66606C5425C31C4B0070D881 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		66606C4825C31C4A0070D881 /* Dota 2 Directories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota 2 Directories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66606C4B25C31C4A0070D881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66606C4D25C31C4A0070D881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		66606C4F25C31C4A0070D881 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66606C5225C31C4A0070D881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66606C5425C31C4B0070D881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				66606C4B25C31C4A0070D881 /* AppDelegate.swift */,
-				66606C4D25C31C4A0070D881 /* SceneDelegate.swift */,
 				66606C4F25C31C4A0070D881 /* ViewController.swift */,
 				66606C5125C31C4A0070D881 /* Main.storyboard */,
 				66606C5425C31C4B0070D881 /* Assets.xcassets */,
@@ -139,7 +136,6 @@
 			files = (
 				66606C5025C31C4A0070D881 /* ViewController.swift in Sources */,
 				66606C4C25C31C4A0070D881 /* AppDelegate.swift in Sources */,
-				66606C4E25C31C4A0070D881 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "private.Dota-2-Directories";
+				PRODUCT_BUNDLE_IDENTIFIER = "private.dota-2-directories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +308,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "private.Dota-2-Directories";
+				PRODUCT_BUNDLE_IDENTIFIER = "private.dota-2-directories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
