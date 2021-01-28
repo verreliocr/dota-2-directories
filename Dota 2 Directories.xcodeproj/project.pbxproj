@@ -19,6 +19,12 @@
 		66606C8125C3206A0070D881 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8025C3206A0070D881 /* Extension+UITableViewCell.swift */; };
 		66606C8425C320770070D881 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8325C320770070D881 /* Extension+UIView.swift */; };
 		66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8625C320960070D881 /* Extension+UIViewController.swift */; };
+		66606C8A25C320ED0070D881 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8925C320ED0070D881 /* EndPoint.swift */; };
+		66606C8D25C321450070D881 /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8C25C321450070D881 /* HandleError.swift */; };
+		66606C9025C321510070D881 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C8F25C321510070D881 /* HTTPMethod.swift */; };
+		66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9225C3215E0070D881 /* HTTPRequest.swift */; };
+		66606C9625C3216C0070D881 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9525C3216C0070D881 /* IRequest.swift */; };
+		66606C9925C3217B0070D881 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606C9825C3217B0070D881 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		66606C8025C3206A0070D881 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		66606C8325C320770070D881 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		66606C8625C320960070D881 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		66606C8925C320ED0070D881 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		66606C8C25C321450070D881 /* HandleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
+		66606C8F25C321510070D881 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		66606C9225C3215E0070D881 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		66606C9525C3216C0070D881 /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		66606C9825C3217B0070D881 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,12 @@
 		66606C6825C31F680070D881 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				66606C8925C320ED0070D881 /* EndPoint.swift */,
+				66606C8C25C321450070D881 /* HandleError.swift */,
+				66606C8F25C321510070D881 /* HTTPMethod.swift */,
+				66606C9225C3215E0070D881 /* HTTPRequest.swift */,
+				66606C9525C3216C0070D881 /* IRequest.swift */,
+				66606C9825C3217B0070D881 /* Reachability.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -205,12 +223,18 @@
 				66606C7525C320240070D881 /* Extension+UICollectionView.swift in Sources */,
 				66606C7825C320340070D881 /* Extension+UICollectionViewCell.swift in Sources */,
 				66606C7E25C3205B0070D881 /* Extension+UITableView.swift in Sources */,
+				66606C9625C3216C0070D881 /* IRequest.swift in Sources */,
 				66606C8125C3206A0070D881 /* Extension+UITableViewCell.swift in Sources */,
+				66606C8A25C320ED0070D881 /* EndPoint.swift in Sources */,
 				66606C6F25C31FF40070D881 /* Extension+Codable.swift in Sources */,
+				66606C8D25C321450070D881 /* HandleError.swift in Sources */,
 				66606C7225C3200F0070D881 /* Extension+UIApplication.swift in Sources */,
 				66606C7B25C3204A0070D881 /* Extension+UIImageView.swift in Sources */,
 				66606C4C25C31C4A0070D881 /* AppDelegate.swift in Sources */,
+				66606C9025C321510070D881 /* HTTPMethod.swift in Sources */,
+				66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */,
 				66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */,
+				66606C9925C3217B0070D881 /* Reachability.swift in Sources */,
 				66606C8425C320770070D881 /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
