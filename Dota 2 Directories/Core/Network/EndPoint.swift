@@ -7,7 +7,7 @@
 
 import Foundation
 
-private let baseURL = "https://api.opendota.com"
+let baseURL = "https://api.opendota.com"
 
 enum EndPoint {
     case getListHeroes

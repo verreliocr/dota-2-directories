@@ -10,6 +10,7 @@ import UIKit
 class ListHeroesViewController: UIViewController {
     
     let presenter: IListHeroesPresenter
+    @IBOutlet weak var heroesListCollectionView: UICollectionView!
     
     init(presenter: IListHeroesPresenter) {
         self.presenter = presenter
@@ -22,6 +23,7 @@ class ListHeroesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Dota 2 Heroes"
     }
 
 }
