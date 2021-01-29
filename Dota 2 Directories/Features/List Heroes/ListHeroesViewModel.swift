@@ -9,4 +9,6 @@ import Foundation
 
 class ListHeroesViewModel {
     var listHeroes: [HeroesModel] = []
+    var listRoles: [String] = []
+    var selectedRoles: String = "All"
 }

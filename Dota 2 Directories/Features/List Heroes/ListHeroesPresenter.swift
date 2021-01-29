@@ -47,4 +47,16 @@ class ListHeroesPresenter: IListHeroesPresenter {
     func getNumberOfItems() -> Int {
         return viewModel.listHeroes.count
     }
+    
+    func getSelectedRoles() -> String {
+        return viewModel.selectedRoles
+    }
+    
+    func getImgUrl(at index: Int) -> String {
+        return viewModel.listHeroes[index].img ?? ""
+    }
+    
+    func getName(at index: Int) -> String {
+        return viewModel.listHeroes[index].localizedName ?? ""
+    }
 }

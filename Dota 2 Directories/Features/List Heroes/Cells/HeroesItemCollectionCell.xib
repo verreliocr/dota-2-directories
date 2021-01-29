@@ -25,12 +25,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Uor-sx-4Ur" secondAttribute="height" multiplier="16:9" id="luB-G9-1WW"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-rk-1T6">
-                                <rect key="frame" x="8" y="152" width="240" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="fEt-7K-Zht"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="144" width="256" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,11 +40,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="s6A-rk-1T6" secondAttribute="trailing" constant="8" id="N8n-J5-Mxr"/>
-                            <constraint firstItem="s6A-rk-1T6" firstAttribute="leading" secondItem="M3n-v6-s5W" secondAttribute="leading" constant="8" id="Z9P-OM-cSu"/>
+                            <constraint firstAttribute="trailing" secondItem="s6A-rk-1T6" secondAttribute="trailing" id="N8n-J5-Mxr"/>
+                            <constraint firstItem="s6A-rk-1T6" firstAttribute="leading" secondItem="M3n-v6-s5W" secondAttribute="leading" id="Z9P-OM-cSu"/>
                             <constraint firstItem="Uor-sx-4Ur" firstAttribute="top" secondItem="M3n-v6-s5W" secondAttribute="top" id="iVJ-X4-pAj"/>
+                            <constraint firstAttribute="bottom" secondItem="s6A-rk-1T6" secondAttribute="bottom" id="myX-Kb-GfX"/>
                             <constraint firstItem="Uor-sx-4Ur" firstAttribute="leading" secondItem="M3n-v6-s5W" secondAttribute="leading" id="pyX-kZ-3in"/>
-                            <constraint firstItem="s6A-rk-1T6" firstAttribute="top" secondItem="Uor-sx-4Ur" secondAttribute="bottom" constant="8" id="qm3-1v-WmG"/>
+                            <constraint firstItem="s6A-rk-1T6" firstAttribute="top" secondItem="Uor-sx-4Ur" secondAttribute="bottom" id="qm3-1v-WmG"/>
                             <constraint firstAttribute="trailing" secondItem="Uor-sx-4Ur" secondAttribute="trailing" id="snP-V0-6RD"/>
                         </constraints>
                     </view>

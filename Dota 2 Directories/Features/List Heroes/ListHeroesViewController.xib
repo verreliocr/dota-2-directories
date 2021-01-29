@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListHeroesViewController" customModule="Dota_2_Directories" customModuleProvider="target">
             <connections>
+                <outlet property="filterButton" destination="fmP-qf-hDB" id="UY0-mm-5eU"/>
                 <outlet property="heroesListCollectionView" destination="xDf-7D-pqh" id="GOZ-sl-rx3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-7D-pqh">
-                    <rect key="frame" x="16" y="116" width="382" height="746"/>
+                    <rect key="frame" x="0.0" y="116" width="414" height="746"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KIt-K3-O7P">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="KIt-K3-O7P">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-qf-hDB">
@@ -48,8 +49,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fmP-qf-hDB" secondAttribute="trailing" constant="16" id="Su4-4D-1L4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xDf-7D-pqh" secondAttribute="bottom" id="abp-pp-RFy"/>
                 <constraint firstItem="fmP-qf-hDB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="eoy-14-WvI"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xDf-7D-pqh" secondAttribute="trailing" constant="16" id="hJH-RT-G3e"/>
-                <constraint firstItem="xDf-7D-pqh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mFf-Cr-loW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xDf-7D-pqh" secondAttribute="trailing" id="hJH-RT-G3e"/>
+                <constraint firstItem="xDf-7D-pqh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mFf-Cr-loW"/>
                 <constraint firstItem="fmP-qf-hDB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mab-dh-Xi6"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>

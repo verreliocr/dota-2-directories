@@ -20,8 +20,11 @@ protocol IListHeroesInteractor {
 
 protocol IListHeroesPresenter {
     func setView(_ view: IListHeroesView)
+    func getSelectedRoles() -> String
     func viewWillAppear()
     func getNumberOfItems() -> Int
+    func getImgUrl(at index: Int) -> String
+    func getName(at index: Int) -> String
 }
 
 protocol IListHeroesWireframe {

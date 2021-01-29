@@ -8,7 +8,7 @@
 import Foundation
 
 struct HeroesModel: Codable {
-    var id: String?
+    var id: Int?
     var localizedName: String?
     var primaryAttr: String?
     var roles: [String]?
@@ -29,7 +29,7 @@ struct HeroesModel: Codable {
     var projectileSpeed: Double?
     var attackRate: Double?
     var moveSpeed: Double?
-    var heroId: Double?
+    var heroId: Int?
 }
 
 private extension HeroesModel {

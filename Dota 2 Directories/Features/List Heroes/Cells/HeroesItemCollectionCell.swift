@@ -16,8 +16,11 @@ class HeroesItemCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func bund(imgUrl: String, name: String) {
-        
+    func bind(imgUrl: String, name: String) {
+        if let url = URL(string: "\(baseURL)\(imgUrl)") {
+            heroesImageView.setImage(url: url, placeholder: nil)
+        }
+        heroesNameLabel.text = name
     }
 
 }
