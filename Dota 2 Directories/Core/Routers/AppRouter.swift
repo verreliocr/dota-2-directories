@@ -68,4 +68,11 @@ class AppRouter: IRouter {
         viewController.modalPresentationStyle = .fullScreen
         self.navigationController.present(viewController, animated: true, completion: nil)
     }
+    
+    func presentOver(module: FeatureModule, using params: [String : Any] = [:]) {
+        let module = module.create(using: self)
+        let viewController: UIViewController = module.resolve(using: params)
+        viewController.modalPresentationStyle = .overCurrentContext
+        navigationController.present(viewController, animated: false)
+    }
 }

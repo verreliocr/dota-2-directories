@@ -48,7 +48,8 @@ class ListHeroesPresenter: IListHeroesPresenter {
     private func getListRoles() {
         let listRolesRaw = viewModel.listHeroes.map({ $0.roles ?? [] })
         let listRolesReduce = listRolesRaw.reduce([], +)
-        let listRoles = Array(Set(listRolesReduce))
+        var listRoles = Array(Set(listRolesReduce))
+        listRoles.insert("All", at: 0)
         
         self.viewModel.listRoles = listRoles
     }
@@ -98,5 +99,16 @@ class ListHeroesPresenter: IListHeroesPresenter {
         })
         let getPrefix = sorted.prefix(3)
         return Array(getPrefix)
+    }
+    
+    func openFilterRoles() {
+        self.wireframe.openFilterRoles(delegate: self, roles: viewModel.listRoles, selectedRoles: viewModel.selectedRoles)
+    }
+}
+
+extension ListHeroesPresenter: IFilterRolesDelegate {
+    func didFinishSelectRoles(_ roles: String) {
+        self.viewModel.selectedRoles = roles
+        self.view?.reloadView()
     }
 }

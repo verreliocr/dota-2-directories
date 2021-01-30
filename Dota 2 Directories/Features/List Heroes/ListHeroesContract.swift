@@ -28,8 +28,9 @@ protocol IListHeroesPresenter {
     func getHighestSpeed() -> [HeroesModel]
     func getHighestMaxAttack() -> [HeroesModel]
     func getHighestMana() -> [HeroesModel]
+    func openFilterRoles()
 }
 
 protocol IListHeroesWireframe {
-    
+    func openFilterRoles(delegate: IFilterRolesDelegate, roles: [String], selectedRoles: String)
 }

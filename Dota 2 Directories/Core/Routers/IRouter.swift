@@ -16,4 +16,5 @@ protocol IRouter: class {
     func present(module: FeatureModule, asNavigation: Bool, using params: [String: Any])
     func push(module: FeatureModule, using params: [String: Any])
     func directPresent(_ viewController: UIViewController)
+    func presentOver(module: FeatureModule, using params: [String : Any])
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterRolesViewController" customModule="Dota_2_Directories" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="RJe-qQ-8oK" id="hDQ-55-Dtb"/>
+                <outlet property="doneButton" destination="cee-Ce-LlC" id="ACZ-ws-ida"/>
+                <outlet property="rolesPickerView" destination="NYx-MJ-wVK" id="bgj-EA-Dsw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSi-vl-FrY">
+                    <rect key="frame" x="0.0" y="582" width="414" height="280"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYx-MJ-wVK">
+                            <rect key="frame" x="0.0" y="40" width="414" height="240"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="DJh-7l-lil"/>
+                            </constraints>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cee-Ce-LlC">
+                            <rect key="frame" x="334" y="0.0" width="72" height="40"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Done"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJe-qQ-8oK">
+                            <rect key="frame" x="8" y="0.0" width="84" height="40"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" systemColor="systemRedColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="RJe-qQ-8oK" firstAttribute="leading" secondItem="YSi-vl-FrY" secondAttribute="leading" constant="8" id="0zE-xW-tNv"/>
+                        <constraint firstItem="RJe-qQ-8oK" firstAttribute="top" secondItem="YSi-vl-FrY" secondAttribute="top" id="3np-tv-gib"/>
+                        <constraint firstAttribute="trailing" secondItem="NYx-MJ-wVK" secondAttribute="trailing" id="JX1-7d-CFj"/>
+                        <constraint firstAttribute="height" constant="280" id="Kyu-bp-N5a"/>
+                        <constraint firstAttribute="trailing" secondItem="cee-Ce-LlC" secondAttribute="trailing" constant="8" id="Lhb-GJ-Ohq"/>
+                        <constraint firstAttribute="bottom" secondItem="NYx-MJ-wVK" secondAttribute="bottom" id="RYK-fr-NUe"/>
+                        <constraint firstItem="NYx-MJ-wVK" firstAttribute="top" secondItem="RJe-qQ-8oK" secondAttribute="bottom" id="USb-JB-ARq"/>
+                        <constraint firstItem="cee-Ce-LlC" firstAttribute="top" secondItem="YSi-vl-FrY" secondAttribute="top" id="b1x-CS-mfj"/>
+                        <constraint firstItem="NYx-MJ-wVK" firstAttribute="top" secondItem="cee-Ce-LlC" secondAttribute="bottom" id="bFI-8X-z16"/>
+                        <constraint firstItem="NYx-MJ-wVK" firstAttribute="leading" secondItem="YSi-vl-FrY" secondAttribute="leading" id="vRL-Wb-6QX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muR-d5-4j0">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="YSi-vl-FrY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2EV-sQ-LZk"/>
+                <constraint firstItem="muR-d5-4j0" firstAttribute="top" secondItem="YSi-vl-FrY" secondAttribute="bottom" id="93l-C3-6Yu"/>
+                <constraint firstItem="YSi-vl-FrY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="G9l-RF-Kkt"/>
+                <constraint firstItem="muR-d5-4j0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LDh-jS-iw5"/>
+                <constraint firstItem="YSi-vl-FrY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nOy-ha-cMt"/>
+                <constraint firstAttribute="bottom" secondItem="muR-d5-4j0" secondAttribute="bottom" id="psQ-w5-qDY"/>
+                <constraint firstAttribute="trailing" secondItem="muR-d5-4j0" secondAttribute="trailing" id="wlf-La-fnj"/>
+            </constraints>
+            <point key="canvasLocation" x="153.62318840579712" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,15 @@
 		66606CBD25C3278E0070D881 /* ListHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CBB25C3278E0070D881 /* ListHeroesViewController.swift */; };
 		66606CBE25C3278E0070D881 /* ListHeroesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66606CBC25C3278E0070D881 /* ListHeroesViewController.xib */; };
 		66606CC125C327D60070D881 /* ListHeroesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CC025C327D60070D881 /* ListHeroesModule.swift */; };
+		66D6A34125C5AE10004EDAEE /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A34025C5AE10004EDAEE /* Extension+UIImage.swift */; };
+		66D6A3AE25C5B1B6004EDAEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A3AD25C5B1B6004EDAEE /* QuartzCore.framework */; };
+		66D6A3B025C5B1BE004EDAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A3AF25C5B1BE004EDAEE /* CoreGraphics.framework */; };
+		66D6A40325C5B8DF004EDAEE /* FilterRolesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A40225C5B8DF004EDAEE /* FilterRolesContract.swift */; };
+		66D6A40625C5B986004EDAEE /* FilterRolesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A40525C5B986004EDAEE /* FilterRolesViewModel.swift */; };
+		66D6A40925C5B9F3004EDAEE /* FilterRolesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A40825C5B9F3004EDAEE /* FilterRolesPresenter.swift */; };
+		66D6A40D25C5BA60004EDAEE /* FilterRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A40B25C5BA60004EDAEE /* FilterRolesViewController.swift */; };
+		66D6A40E25C5BA60004EDAEE /* FilterRolesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A40C25C5BA60004EDAEE /* FilterRolesViewController.xib */; };
+		66D6A41125C5BFE7004EDAEE /* FilterRolesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +90,15 @@
 		66606CBB25C3278E0070D881 /* ListHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeroesViewController.swift; sourceTree = "<group>"; };
 		66606CBC25C3278E0070D881 /* ListHeroesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHeroesViewController.xib; sourceTree = "<group>"; };
 		66606CC025C327D60070D881 /* ListHeroesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeroesModule.swift; sourceTree = "<group>"; };
+		66D6A34025C5AE10004EDAEE /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		66D6A3AD25C5B1B6004EDAEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		66D6A3AF25C5B1BE004EDAEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66D6A40225C5B8DF004EDAEE /* FilterRolesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesContract.swift; sourceTree = "<group>"; };
+		66D6A40525C5B986004EDAEE /* FilterRolesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesViewModel.swift; sourceTree = "<group>"; };
+		66D6A40825C5B9F3004EDAEE /* FilterRolesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesPresenter.swift; sourceTree = "<group>"; };
+		66D6A40B25C5BA60004EDAEE /* FilterRolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesViewController.swift; sourceTree = "<group>"; };
+		66D6A40C25C5BA60004EDAEE /* FilterRolesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterRolesViewController.xib; sourceTree = "<group>"; };
+		66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesModule.swift; sourceTree = "<group>"; };
 		D3CF6DB4DB7243F64DE2D039 /* Pods_Dota_2_Directories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota_2_Directories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D6A3B025C5B1BE004EDAEE /* CoreGraphics.framework in Frameworks */,
+				66D6A3AE25C5B1B6004EDAEE /* QuartzCore.framework in Frameworks */,
 				476A966B67C711F22883B312 /* Pods_Dota_2_Directories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +119,8 @@
 		25CCF418561337D7C60ADBFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66D6A3AF25C5B1BE004EDAEE /* CoreGraphics.framework */,
+				66D6A3AD25C5B1B6004EDAEE /* QuartzCore.framework */,
 				D3CF6DB4DB7243F64DE2D039 /* Pods_Dota_2_Directories.framework */,
 			);
 			name = Frameworks;
@@ -110,7 +132,6 @@
 				24AD10CE502027F1407F7951 /* Pods-Dota 2 Directories.debug.xcconfig */,
 				2BDDBDE5F52B850769F5A630 /* Pods-Dota 2 Directories.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				66606CAA25C326A60070D881 /* List Heroes */,
+				66D6A40125C5B8AC004EDAEE /* Filter Roles */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -212,6 +234,7 @@
 				66606C7125C3200F0070D881 /* Extension+UIApplication.swift */,
 				66606C7425C320240070D881 /* Extension+UICollectionView.swift */,
 				66606C7725C320340070D881 /* Extension+UICollectionViewCell.swift */,
+				66D6A34025C5AE10004EDAEE /* Extension+UIImage.swift */,
 				66606C7A25C3204A0070D881 /* Extension+UIImageView.swift */,
 				66606C7D25C3205B0070D881 /* Extension+UITableView.swift */,
 				66606C8025C3206A0070D881 /* Extension+UITableViewCell.swift */,
@@ -235,6 +258,19 @@
 				66606CC025C327D60070D881 /* ListHeroesModule.swift */,
 			);
 			path = "List Heroes";
+			sourceTree = "<group>";
+		};
+		66D6A40125C5B8AC004EDAEE /* Filter Roles */ = {
+			isa = PBXGroup;
+			children = (
+				66D6A40225C5B8DF004EDAEE /* FilterRolesContract.swift */,
+				66D6A40525C5B986004EDAEE /* FilterRolesViewModel.swift */,
+				66D6A40825C5B9F3004EDAEE /* FilterRolesPresenter.swift */,
+				66D6A40B25C5BA60004EDAEE /* FilterRolesViewController.swift */,
+				66D6A40C25C5BA60004EDAEE /* FilterRolesViewController.xib */,
+				66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */,
+			);
+			path = "Filter Roles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +334,7 @@
 			files = (
 				66606C5825C31C4B0070D881 /* LaunchScreen.storyboard in Resources */,
 				66606C5525C31C4B0070D881 /* Assets.xcassets in Resources */,
+				66D6A40E25C5BA60004EDAEE /* FilterRolesViewController.xib in Resources */,
 				663C185825C3ED3B002F5068 /* HeroesItemCollectionCell.xib in Resources */,
 				66606CBE25C3278E0070D881 /* ListHeroesViewController.xib in Resources */,
 			);
@@ -360,10 +397,13 @@
 				66606C8125C3206A0070D881 /* Extension+UITableViewCell.swift in Sources */,
 				66606CA525C3222B0070D881 /* IRouter.swift in Sources */,
 				66606C8A25C320ED0070D881 /* EndPoint.swift in Sources */,
+				66D6A40925C5B9F3004EDAEE /* FilterRolesPresenter.swift in Sources */,
+				66D6A41125C5BFE7004EDAEE /* FilterRolesModule.swift in Sources */,
 				66606C6F25C31FF40070D881 /* Extension+Codable.swift in Sources */,
 				66606C8D25C321450070D881 /* HandleError.swift in Sources */,
 				66606CB325C327180070D881 /* ListHeroesInteractor.swift in Sources */,
 				66606C9F25C321CB0070D881 /* FeatureModule.swift in Sources */,
+				66D6A40625C5B986004EDAEE /* FilterRolesViewModel.swift in Sources */,
 				66606C7225C3200F0070D881 /* Extension+UIApplication.swift in Sources */,
 				663C185725C3ED3B002F5068 /* HeroesItemCollectionCell.swift in Sources */,
 				66606CC125C327D60070D881 /* ListHeroesModule.swift in Sources */,
@@ -372,8 +412,11 @@
 				66606C9025C321510070D881 /* HTTPMethod.swift in Sources */,
 				66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */,
 				66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */,
+				66D6A40325C5B8DF004EDAEE /* FilterRolesContract.swift in Sources */,
 				66606CB925C3276B0070D881 /* ListHeroesPresenter.swift in Sources */,
+				66D6A34125C5AE10004EDAEE /* Extension+UIImage.swift in Sources */,
 				66606C9925C3217B0070D881 /* Reachability.swift in Sources */,
+				66D6A40D25C5BA60004EDAEE /* FilterRolesViewController.swift in Sources */,
 				66606C9C25C321BB0070D881 /* AppRouter.swift in Sources */,
 				66606CB625C327560070D881 /* ListHeroesWireframe.swift in Sources */,
 				66606CAC25C326B30070D881 /* ListHeroesContract.swift in Sources */,
@@ -529,6 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "private.dota-2-directories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,6 +593,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "private.dota-2-directories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

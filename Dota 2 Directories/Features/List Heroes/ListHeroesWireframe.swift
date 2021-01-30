@@ -13,4 +13,11 @@ class ListHeroesWireframe: IListHeroesWireframe {
     init(appRouter: IRouter) {
         self.appRouter = appRouter
     }
+    
+    func openFilterRoles(delegate: IFilterRolesDelegate, roles: [String], selectedRoles: String) {
+        appRouter.presentOver(module: .filterHeroes,
+                              using: ["delegate": delegate,
+                                      "roles": roles,
+                                      "selectedRoles": selectedRoles])
+    }
 }

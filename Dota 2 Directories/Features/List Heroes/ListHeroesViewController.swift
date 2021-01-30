@@ -25,8 +25,11 @@ class ListHeroesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Dota 2 Heroes"
-        self.filterButton.setTitle("Filter by roles : \(self.presenter.getSelectedRoles())", for: .normal)
         self.setupCollectionView()
+        
+        self.filterButton.addAction { [unowned self] in
+            self.presenter.openFilterRoles()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,6 +64,7 @@ extension ListHeroesViewController: IListHeroesView {
     }
     
     func reloadView() {
+        self.filterButton.setTitle("Filter by roles : \(self.presenter.getSelectedRoles())", for: .normal)
         DispatchQueue.main.async { [unowned self] in
             self.heroesListCollectionView.reloadData()
         }
