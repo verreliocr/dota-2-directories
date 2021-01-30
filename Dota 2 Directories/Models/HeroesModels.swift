@@ -11,6 +11,17 @@ enum PrimaryAttributes: String, Codable {
     case str = "str"
     case agi = "agi"
     case int = "int"
+    
+    var toString: String {
+        switch self {
+        case .str:
+            return "Strength"
+        case .agi:
+            return "Agility"
+        case .int:
+            return "Intelligence"
+        }
+    }
 }
 
 enum AttackType: String, Codable {

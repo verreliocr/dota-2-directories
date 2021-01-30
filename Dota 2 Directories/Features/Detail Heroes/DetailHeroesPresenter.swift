@@ -19,8 +19,8 @@ class DetailHeroesPresenter: IDetailHeroesPresenter {weak var view: IDetailHeroe
         self.view = view
     }
     
-    func viewWillAppear() {
-        
+    func viewLoaded() {
+        self.view?.reloadView()
     }
     
     func getImgUrl() -> String {

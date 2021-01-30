@@ -14,7 +14,7 @@ protocol IDetailHeroesView: class {
 
 protocol IDetailHeroesPresenter {
     func setView(_ view: IDetailHeroesView)
-    func viewWillAppear()
+    func viewLoaded()
     func getImgUrl() -> String
     func getName() -> String
     func getAttackType() -> AttackType
