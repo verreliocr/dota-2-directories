@@ -11,7 +11,6 @@ import UIKit
 protocol IListHeroesView: class {
     func reloadView()
     func handleError(type: ErrorType, retryAction: @escaping (() -> Void))
-    func showLoading(_ show: Bool)
 }
 
 protocol IListHeroesInteractor {
@@ -29,10 +28,11 @@ protocol IListHeroesPresenter {
     func getHighestMaxAttack() -> [HeroesModel]
     func getHighestMana() -> [HeroesModel]
     func openFilterRoles()
-    func getRecommendation(primaryAttr: primaryAttributes)
+    func getRecommendation(primaryAttr: PrimaryAttributes)
     func didSelectHeroes(at index: Int)
 }
 
 protocol IListHeroesWireframe {
     func openFilterRoles(delegate: IFilterRolesDelegate, roles: [String], selectedRoles: String)
+    func navigateToDetail(with heroes: HeroesModel, and recommendation: [HeroesModel])
 }

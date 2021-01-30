@@ -20,4 +20,9 @@ class ListHeroesWireframe: IListHeroesWireframe {
                                       "roles": roles,
                                       "selectedRoles": selectedRoles])
     }
+    
+    func navigateToDetail(with heroes: HeroesModel, and recommendation: [HeroesModel]) {
+        appRouter.push(module: .detailHeroes, using: ["detail": heroes,
+                                                      "recommendation": recommendation])
+    }
 }

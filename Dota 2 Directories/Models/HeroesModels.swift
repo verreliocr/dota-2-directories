@@ -7,16 +7,22 @@
 
 import Foundation
 
-enum primaryAttributes: String, Codable {
+enum PrimaryAttributes: String, Codable {
     case str = "str"
     case agi = "agi"
     case int = "int"
 }
 
+enum AttackType: String, Codable {
+    case melee = "Melee"
+    case ranged = "Ranged"
+}
+
 struct HeroesModel: Codable {
     var id: Int?
     var localizedName: String?
-    var primaryAttr: primaryAttributes?
+    var primaryAttr: PrimaryAttributes?
+    var attackType: AttackType?
     var roles: [String]?
     var img: String?
     var icon: String?
@@ -43,6 +49,7 @@ private extension HeroesModel {
         case id, roles, img, icon
         case localizedName = "localized_name"
         case primaryAttr = "primary_attr"
+        case attackType = "attack_type"
         case baseHealth = "base_health"
         case baseHealthRegen = "base_health_regen"
         case baseMana = "base_mana"

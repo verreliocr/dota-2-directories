@@ -11,6 +11,7 @@ import UIKit
 enum FeatureModule {
     case listHeroes
     case filterHeroes
+    case detailHeroes
 
     func create(using router: IRouter) -> IModule {
         switch self {
@@ -18,6 +19,8 @@ enum FeatureModule {
             return ListHeroesModule(appRouter: router)
         case .filterHeroes:
             return FilterRolesModule(appRouter: router)
+        case .detailHeroes:
+            return DetailHeroesModule(appRouter: router)
         }
     }
 }

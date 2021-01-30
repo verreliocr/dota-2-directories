@@ -29,9 +29,7 @@ class ListHeroesPresenter: IListHeroesPresenter {
     }
     
     private func getListHeroes() {
-        view?.showLoading(true)
         interactor.getListHeroes { [weak self] data, type in
-            self?.view?.showLoading(false)
             if let data = data {
                 self?.viewModel.listHeroes = data
                 self?.view?.reloadView()
@@ -105,7 +103,7 @@ class ListHeroesPresenter: IListHeroesPresenter {
         self.wireframe.openFilterRoles(delegate: self, roles: viewModel.listRoles, selectedRoles: viewModel.selectedRoles)
     }
     
-    func getRecommendation(primaryAttr: primaryAttributes) {
+    func getRecommendation(primaryAttr: PrimaryAttributes) {
         switch primaryAttr {
         case .str:
             self.viewModel.recommendation = getHighestMaxAttack()
@@ -119,6 +117,8 @@ class ListHeroesPresenter: IListHeroesPresenter {
     func didSelectHeroes(at index: Int) {
         let selectedHeroes = getItems()[index]
         getRecommendation(primaryAttr: selectedHeroes.primaryAttr ?? .str)
+        
+        wireframe.navigateToDetail(with: selectedHeroes, and: self.viewModel.recommendation)
     }
 }
 

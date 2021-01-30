@@ -59,10 +59,6 @@ extension ListHeroesViewController: IListHeroesView {
         }
     }
     
-    func showLoading(_ show: Bool) {
-        
-    }
-    
     func reloadView() {
         self.filterButton.setTitle("Filter by roles : \(self.presenter.getSelectedRoles())", for: .normal)
         DispatchQueue.main.async { [unowned self] in

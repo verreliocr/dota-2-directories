@@ -50,6 +50,12 @@
 		66D6A40D25C5BA60004EDAEE /* FilterRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A40B25C5BA60004EDAEE /* FilterRolesViewController.swift */; };
 		66D6A40E25C5BA60004EDAEE /* FilterRolesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A40C25C5BA60004EDAEE /* FilterRolesViewController.xib */; };
 		66D6A41125C5BFE7004EDAEE /* FilterRolesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */; };
+		66D6A41625C5C6CB004EDAEE /* DetailHeroesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41525C5C6CB004EDAEE /* DetailHeroesContract.swift */; };
+		66D6A41925C5C83B004EDAEE /* DetailHeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41825C5C83B004EDAEE /* DetailHeroesViewModel.swift */; };
+		66D6A41C25C5C891004EDAEE /* DetailHeroesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41B25C5C890004EDAEE /* DetailHeroesPresenter.swift */; };
+		66D6A42025C5C9AB004EDAEE /* DetailHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A41E25C5C9AB004EDAEE /* DetailHeroesViewController.swift */; };
+		66D6A42125C5C9AB004EDAEE /* DetailHeroesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A41F25C5C9AB004EDAEE /* DetailHeroesViewController.xib */; };
+		66D6A42425C5CA07004EDAEE /* DetailHeroesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A42325C5CA07004EDAEE /* DetailHeroesModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +105,12 @@
 		66D6A40B25C5BA60004EDAEE /* FilterRolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesViewController.swift; sourceTree = "<group>"; };
 		66D6A40C25C5BA60004EDAEE /* FilterRolesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterRolesViewController.xib; sourceTree = "<group>"; };
 		66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRolesModule.swift; sourceTree = "<group>"; };
+		66D6A41525C5C6CB004EDAEE /* DetailHeroesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroesContract.swift; sourceTree = "<group>"; };
+		66D6A41825C5C83B004EDAEE /* DetailHeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroesViewModel.swift; sourceTree = "<group>"; };
+		66D6A41B25C5C890004EDAEE /* DetailHeroesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroesPresenter.swift; sourceTree = "<group>"; };
+		66D6A41E25C5C9AB004EDAEE /* DetailHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroesViewController.swift; sourceTree = "<group>"; };
+		66D6A41F25C5C9AB004EDAEE /* DetailHeroesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeroesViewController.xib; sourceTree = "<group>"; };
+		66D6A42325C5CA07004EDAEE /* DetailHeroesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroesModule.swift; sourceTree = "<group>"; };
 		D3CF6DB4DB7243F64DE2D039 /* Pods_Dota_2_Directories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota_2_Directories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -277,6 +289,12 @@
 		66D6A41325C5C415004EDAEE /* Detail Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				66D6A41525C5C6CB004EDAEE /* DetailHeroesContract.swift */,
+				66D6A41825C5C83B004EDAEE /* DetailHeroesViewModel.swift */,
+				66D6A41B25C5C890004EDAEE /* DetailHeroesPresenter.swift */,
+				66D6A41E25C5C9AB004EDAEE /* DetailHeroesViewController.swift */,
+				66D6A41F25C5C9AB004EDAEE /* DetailHeroesViewController.xib */,
+				66D6A42325C5CA07004EDAEE /* DetailHeroesModule.swift */,
 			);
 			path = "Detail Heroes";
 			sourceTree = "<group>";
@@ -341,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66606C5825C31C4B0070D881 /* LaunchScreen.storyboard in Resources */,
+				66D6A42125C5C9AB004EDAEE /* DetailHeroesViewController.xib in Resources */,
 				66606C5525C31C4B0070D881 /* Assets.xcassets in Resources */,
 				66D6A40E25C5BA60004EDAEE /* FilterRolesViewController.xib in Resources */,
 				663C185825C3ED3B002F5068 /* HeroesItemCollectionCell.xib in Resources */,
@@ -401,10 +420,13 @@
 				66606C7825C320340070D881 /* Extension+UICollectionViewCell.swift in Sources */,
 				66606C7E25C3205B0070D881 /* Extension+UITableView.swift in Sources */,
 				66606C9625C3216C0070D881 /* IRequest.swift in Sources */,
+				66D6A41625C5C6CB004EDAEE /* DetailHeroesContract.swift in Sources */,
 				66606CA225C3221D0070D881 /* IModule.swift in Sources */,
 				66606C8125C3206A0070D881 /* Extension+UITableViewCell.swift in Sources */,
+				66D6A41925C5C83B004EDAEE /* DetailHeroesViewModel.swift in Sources */,
 				66606CA525C3222B0070D881 /* IRouter.swift in Sources */,
 				66606C8A25C320ED0070D881 /* EndPoint.swift in Sources */,
+				66D6A42425C5CA07004EDAEE /* DetailHeroesModule.swift in Sources */,
 				66D6A40925C5B9F3004EDAEE /* FilterRolesPresenter.swift in Sources */,
 				66D6A41125C5BFE7004EDAEE /* FilterRolesModule.swift in Sources */,
 				66606C6F25C31FF40070D881 /* Extension+Codable.swift in Sources */,
@@ -422,10 +444,12 @@
 				66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */,
 				66D6A40325C5B8DF004EDAEE /* FilterRolesContract.swift in Sources */,
 				66606CB925C3276B0070D881 /* ListHeroesPresenter.swift in Sources */,
+				66D6A42025C5C9AB004EDAEE /* DetailHeroesViewController.swift in Sources */,
 				66D6A34125C5AE10004EDAEE /* Extension+UIImage.swift in Sources */,
 				66606C9925C3217B0070D881 /* Reachability.swift in Sources */,
 				66D6A40D25C5BA60004EDAEE /* FilterRolesViewController.swift in Sources */,
 				66606C9C25C321BB0070D881 /* AppRouter.swift in Sources */,
+				66D6A41C25C5C891004EDAEE /* DetailHeroesPresenter.swift in Sources */,
 				66606CB625C327560070D881 /* ListHeroesWireframe.swift in Sources */,
 				66606CAC25C326B30070D881 /* ListHeroesContract.swift in Sources */,
 				66606CA825C322EF0070D881 /* HeroesModels.swift in Sources */,
