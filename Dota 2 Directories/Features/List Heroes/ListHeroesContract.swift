@@ -25,6 +25,9 @@ protocol IListHeroesPresenter {
     func getNumberOfItems() -> Int
     func getImgUrl(at index: Int) -> String
     func getName(at index: Int) -> String
+    func getHighestSpeed() -> [HeroesModel]
+    func getHighestMaxAttack() -> [HeroesModel]
+    func getHighestMana() -> [HeroesModel]
 }
 
 protocol IListHeroesWireframe {

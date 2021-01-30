@@ -35,6 +35,7 @@ class ListHeroesPresenter: IListHeroesPresenter {
             if let data = data {
                 self?.viewModel.listHeroes = data
                 self?.view?.reloadView()
+                self?.getListRoles()
             }
             if let type = type {
                 self?.view?.handleError(type: type, retryAction: { [weak self] in
@@ -42,6 +43,14 @@ class ListHeroesPresenter: IListHeroesPresenter {
                 })
             }
         }
+    }
+    
+    private func getListRoles() {
+        let listRolesRaw = viewModel.listHeroes.map({ $0.roles ?? [] })
+        let listRolesReduce = listRolesRaw.reduce([], +)
+        let listRoles = Array(Set(listRolesReduce))
+        
+        self.viewModel.listRoles = listRoles
     }
     
     func getNumberOfItems() -> Int {
@@ -58,5 +67,29 @@ class ListHeroesPresenter: IListHeroesPresenter {
     
     func getName(at index: Int) -> String {
         return viewModel.listHeroes[index].localizedName ?? ""
+    }
+    
+    func getHighestSpeed() -> [HeroesModel] {
+        let sorted = viewModel.listHeroes.sorted(by: {
+            ($0.moveSpeed ?? 0) > ($1.moveSpeed ?? 0)
+        })
+        let getPrefix = sorted.prefix(3)
+        return Array(getPrefix)
+    }
+    
+    func getHighestMaxAttack() -> [HeroesModel] {
+        let sorted = viewModel.listHeroes.sorted(by: {
+            ($0.baseAttackMax ?? 0) > ($1.baseAttackMax ?? 0)
+        })
+        let getPrefix = sorted.prefix(3)
+        return Array(getPrefix)
+    }
+    
+    func getHighestMana() -> [HeroesModel] {
+        let sorted = viewModel.listHeroes.sorted(by: {
+            ($0.baseMana ?? 0) > ($1.baseMana ?? 0)
+        })
+        let getPrefix = sorted.prefix(3)
+        return Array(getPrefix)
     }
 }
