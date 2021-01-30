@@ -7,10 +7,16 @@
 
 import Foundation
 
+enum primaryAttributes: String, Codable {
+    case str = "str"
+    case agi = "agi"
+    case int = "int"
+}
+
 struct HeroesModel: Codable {
     var id: Int?
     var localizedName: String?
-    var primaryAttr: String?
+    var primaryAttr: primaryAttributes?
     var roles: [String]?
     var img: String?
     var icon: String?

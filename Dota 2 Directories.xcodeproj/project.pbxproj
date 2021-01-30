@@ -199,6 +199,7 @@
 			children = (
 				66606CAA25C326A60070D881 /* List Heroes */,
 				66D6A40125C5B8AC004EDAEE /* Filter Roles */,
+				66D6A41325C5C415004EDAEE /* Detail Heroes */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -271,6 +272,13 @@
 				66D6A41025C5BFE7004EDAEE /* FilterRolesModule.swift */,
 			);
 			path = "Filter Roles";
+			sourceTree = "<group>";
+		};
+		66D6A41325C5C415004EDAEE /* Detail Heroes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Detail Heroes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

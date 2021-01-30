@@ -94,4 +94,8 @@ extension ListHeroesViewController: UICollectionViewDataSource, UICollectionView
         let height = width / 256 * 184
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter.didSelectHeroes(at: indexPath.item)
+    }
 }

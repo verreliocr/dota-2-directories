@@ -104,6 +104,22 @@ class ListHeroesPresenter: IListHeroesPresenter {
     func openFilterRoles() {
         self.wireframe.openFilterRoles(delegate: self, roles: viewModel.listRoles, selectedRoles: viewModel.selectedRoles)
     }
+    
+    func getRecommendation(primaryAttr: primaryAttributes) {
+        switch primaryAttr {
+        case .str:
+            self.viewModel.recommendation = getHighestMaxAttack()
+        case .agi:
+            self.viewModel.recommendation = getHighestSpeed()
+        case .int:
+            self.viewModel.recommendation =  getHighestMana()
+        }
+    }
+    
+    func didSelectHeroes(at index: Int) {
+        let selectedHeroes = getItems()[index]
+        getRecommendation(primaryAttr: selectedHeroes.primaryAttr ?? .str)
+    }
 }
 
 extension ListHeroesPresenter: IFilterRolesDelegate {

@@ -29,6 +29,8 @@ protocol IListHeroesPresenter {
     func getHighestMaxAttack() -> [HeroesModel]
     func getHighestMana() -> [HeroesModel]
     func openFilterRoles()
+    func getRecommendation(primaryAttr: primaryAttributes)
+    func didSelectHeroes(at index: Int)
 }
 
 protocol IListHeroesWireframe {
