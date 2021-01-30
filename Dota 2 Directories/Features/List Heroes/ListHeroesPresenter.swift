@@ -53,8 +53,15 @@ class ListHeroesPresenter: IListHeroesPresenter {
         self.viewModel.listRoles = listRoles
     }
     
+    private func getItems() -> [HeroesModel] {
+        if viewModel.selectedRoles == "All" {
+            return viewModel.listHeroes
+        }
+        return viewModel.listHeroes.filter({ $0.roles?.contains(viewModel.selectedRoles) ?? false })
+    }
+    
     func getNumberOfItems() -> Int {
-        return viewModel.listHeroes.count
+        return getItems().count
     }
     
     func getSelectedRoles() -> String {
@@ -62,11 +69,11 @@ class ListHeroesPresenter: IListHeroesPresenter {
     }
     
     func getImgUrl(at index: Int) -> String {
-        return viewModel.listHeroes[index].img ?? ""
+        return getItems()[index].img ?? ""
     }
     
     func getName(at index: Int) -> String {
-        return viewModel.listHeroes[index].localizedName ?? ""
+        return getItems()[index].localizedName ?? ""
     }
     
     func getHighestSpeed() -> [HeroesModel] {
