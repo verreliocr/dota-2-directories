@@ -41,6 +41,10 @@
 		66606CBD25C3278E0070D881 /* ListHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CBB25C3278E0070D881 /* ListHeroesViewController.swift */; };
 		66606CBE25C3278E0070D881 /* ListHeroesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66606CBC25C3278E0070D881 /* ListHeroesViewController.xib */; };
 		66606CC125C327D60070D881 /* ListHeroesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66606CC025C327D60070D881 /* ListHeroesModule.swift */; };
+		66A0A4E625C6F13A0070D58F /* HeroTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0A4E425C6F13A0070D58F /* HeroTableCell.swift */; };
+		66A0A4E725C6F13A0070D58F /* HeroTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0A4E525C6F13A0070D58F /* HeroTableCell.xib */; };
+		66A0A4EC25C6F7140070D58F /* RecommendationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0A4EA25C6F7140070D58F /* RecommendationTableCell.swift */; };
+		66A0A4ED25C6F7140070D58F /* RecommendationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0A4EB25C6F7140070D58F /* RecommendationTableCell.xib */; };
 		66D6A34125C5AE10004EDAEE /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A34025C5AE10004EDAEE /* Extension+UIImage.swift */; };
 		66D6A3AE25C5B1B6004EDAEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A3AD25C5B1B6004EDAEE /* QuartzCore.framework */; };
 		66D6A3B025C5B1BE004EDAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A3AF25C5B1BE004EDAEE /* CoreGraphics.framework */; };
@@ -96,6 +100,10 @@
 		66606CBB25C3278E0070D881 /* ListHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeroesViewController.swift; sourceTree = "<group>"; };
 		66606CBC25C3278E0070D881 /* ListHeroesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHeroesViewController.xib; sourceTree = "<group>"; };
 		66606CC025C327D60070D881 /* ListHeroesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeroesModule.swift; sourceTree = "<group>"; };
+		66A0A4E425C6F13A0070D58F /* HeroTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableCell.swift; sourceTree = "<group>"; };
+		66A0A4E525C6F13A0070D58F /* HeroTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableCell.xib; sourceTree = "<group>"; };
+		66A0A4EA25C6F7140070D58F /* RecommendationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableCell.swift; sourceTree = "<group>"; };
+		66A0A4EB25C6F7140070D58F /* RecommendationTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableCell.xib; sourceTree = "<group>"; };
 		66D6A34025C5AE10004EDAEE /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		66D6A3AD25C5B1B6004EDAEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		66D6A3AF25C5B1BE004EDAEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -273,6 +281,17 @@
 			path = "List Heroes";
 			sourceTree = "<group>";
 		};
+		66A0A4E325C6F11D0070D58F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				66A0A4E425C6F13A0070D58F /* HeroTableCell.swift */,
+				66A0A4E525C6F13A0070D58F /* HeroTableCell.xib */,
+				66A0A4EA25C6F7140070D58F /* RecommendationTableCell.swift */,
+				66A0A4EB25C6F7140070D58F /* RecommendationTableCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		66D6A40125C5B8AC004EDAEE /* Filter Roles */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +308,7 @@
 		66D6A41325C5C415004EDAEE /* Detail Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				66A0A4E325C6F11D0070D58F /* Cells */,
 				66D6A41525C5C6CB004EDAEE /* DetailHeroesContract.swift */,
 				66D6A41825C5C83B004EDAEE /* DetailHeroesViewModel.swift */,
 				66D6A41B25C5C890004EDAEE /* DetailHeroesPresenter.swift */,
@@ -359,10 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66606C5825C31C4B0070D881 /* LaunchScreen.storyboard in Resources */,
+				66A0A4ED25C6F7140070D58F /* RecommendationTableCell.xib in Resources */,
 				66D6A42125C5C9AB004EDAEE /* DetailHeroesViewController.xib in Resources */,
 				66606C5525C31C4B0070D881 /* Assets.xcassets in Resources */,
 				66D6A40E25C5BA60004EDAEE /* FilterRolesViewController.xib in Resources */,
 				663C185825C3ED3B002F5068 /* HeroesItemCollectionCell.xib in Resources */,
+				66A0A4E725C6F13A0070D58F /* HeroTableCell.xib in Resources */,
 				66606CBE25C3278E0070D881 /* ListHeroesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +462,8 @@
 				66606C7B25C3204A0070D881 /* Extension+UIImageView.swift in Sources */,
 				66606C4C25C31C4A0070D881 /* AppDelegate.swift in Sources */,
 				66606C9025C321510070D881 /* HTTPMethod.swift in Sources */,
+				66A0A4E625C6F13A0070D58F /* HeroTableCell.swift in Sources */,
+				66A0A4EC25C6F7140070D58F /* RecommendationTableCell.swift in Sources */,
 				66606C9325C3215E0070D881 /* HTTPRequest.swift in Sources */,
 				66606C8725C320960070D881 /* Extension+UIViewController.swift in Sources */,
 				66D6A40325C5B8DF004EDAEE /* FilterRolesContract.swift in Sources */,

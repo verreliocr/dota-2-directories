@@ -17,10 +17,13 @@ protocol IDetailHeroesPresenter {
     func viewLoaded()
     func getImgUrl() -> String
     func getName() -> String
-    func getAttackType() -> AttackType
-    func getAttr() -> PrimaryAttributes
+    func getAttackRoles() -> NSAttributedString
+    func getAttr() -> String
     func getBaseHealth() -> String
     func getAttack() -> String
     func getMovSpeed() -> String
-    func getRoles() -> String
+    func getImgUrlRecommend(at index: Int) -> String
+    func getNameRecommend(at index: Int) -> String
+    func getAttackRolesRecommend(at index: Int) -> NSAttributedString
+    func getTitle(for section: Int) -> String
 }
