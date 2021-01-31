@@ -15,6 +15,8 @@ protocol IListHeroesView: class {
 
 protocol IListHeroesInteractor {
     func getListHeroes(completion: @escaping (([HeroesModel]?, ErrorType?) -> Void))
+    func saveHeroes(_ heroes: [HeroesModel])
+    func fetchHeroes() -> [HeroesModel]
 }
 
 protocol IListHeroesPresenter {

@@ -6,6 +6,7 @@ inhibit_all_warnings!
 
 target 'Dota 2 Directories' do
 
+  pod 'Disk', '0.6.4'
   pod 'SDWebImage', '4.4.8'
   pod 'SDWebImage/WebP', '4.4.8'
   pod 'FLEX', '4.4.0', :configurations => ['Debug']

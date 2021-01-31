@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Disk
 
 class ListHeroesInteractor: IListHeroesInteractor {
     
@@ -23,5 +24,16 @@ class ListHeroesInteractor: IListHeroesInteractor {
                 completion(nil, type)
             }
         }
+    }
+    
+    func saveHeroes(_ heroes: [HeroesModel]) {
+        try? Disk.save(heroes, to: .caches, as: "heroes.json")
+    }
+    
+    func fetchHeroes() -> [HeroesModel] {
+        if Disk.exists("heroes.json", in: .caches), let data = try? Disk.retrieve("heroes.json", from: .caches, as: [HeroesModel].self) {
+            return data
+        }
+        return []
     }
 }

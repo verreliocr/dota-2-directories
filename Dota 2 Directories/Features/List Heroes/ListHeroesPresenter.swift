@@ -25,6 +25,9 @@ class ListHeroesPresenter: IListHeroesPresenter {
     }
     
     func viewWillAppear() {
+        self.viewModel.listHeroes = interactor.fetchHeroes()
+        self.view?.reloadView()
+        
         getListHeroes()
     }
     
@@ -32,6 +35,7 @@ class ListHeroesPresenter: IListHeroesPresenter {
         interactor.getListHeroes { [weak self] data, type in
             if let data = data {
                 self?.viewModel.listHeroes = data
+                self?.interactor.saveHeroes(data)
                 self?.view?.reloadView()
                 self?.getListRoles()
             }

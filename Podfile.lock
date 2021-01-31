@@ -1,4 +1,5 @@
 PODS:
+  - Disk (0.6.4)
   - FLEX (4.4.0)
   - libwebp (1.1.0):
     - libwebp/demux (= 1.1.0)
@@ -17,21 +18,24 @@ PODS:
     - SDWebImage/Core
 
 DEPENDENCIES:
+  - Disk
   - FLEX (= 4.4.0)
   - SDWebImage (= 4.4.8)
   - SDWebImage/WebP (= 4.4.8)
 
 SPEC REPOS:
   trunk:
+    - Disk
     - FLEX
     - libwebp
     - SDWebImage
 
 SPEC CHECKSUMS:
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   FLEX: 0592c011c6dfbfdb94a5e24f2d4a9dbff0c6026d
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
 
-PODFILE CHECKSUM: 5156086900f861aecc7f35bd7b13c6ebb51636dd
+PODFILE CHECKSUM: 513bafcbf3697263aa7754bd800f3a9d99e47730
 
 COCOAPODS: 1.10.0
